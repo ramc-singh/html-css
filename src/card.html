@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagonal Split custom-flag</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <style>
+      .custom-flag {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+      .top-container {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(167, 74, 239);
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      .bottom-container {
+        width: 100%;
+        height: 100%;
+        background-color: #85C1E9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ram</th>
+            <th>Ram</th>
+            <th>Ram</th>
+            <th>Ram</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="custom-flag">
+              <div class="top-container"></div>
+              <div class="bottom-container"></div>
+            </td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+          </tr>
+          <tr>
+            <td class="custom-flag">
+              <div class="top-container"></div>
+              <div class="bottom-container"></div>
+            </td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+          </tr>
+          <tr>
+            <td class="custom-flag">
+              <div class="top-container"></div>
+              <div class="bottom-container"></div>
+            </td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+            <td>New Code.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
